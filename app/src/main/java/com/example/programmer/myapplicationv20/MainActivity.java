@@ -66,10 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 //Вытаскиваем рассписание
                 Date DNow=new Date();
                 SimpleDateFormat FormatforDateNow = new SimpleDateFormat("yyyy-MM-dd");
-                //System.out.println("текущая дата "+FormatforDateNow.format(DNow));
+                System.out.println("текущая дата "+FormatforDateNow.format(DNow));
 
-                //Document doc = Jsoup.connect("https://home.mephi.ru/study_groups/2888/day?date="+FormatforDateNow.format(DNow)).get();
-                Document doc = Jsoup.connect("https://home.mephi.ru/study_groups/2888/day?date=2017-12-15").get();
+                Document doc = Jsoup.connect("https://home.mephi.ru/study_groups/2888/day?date="+FormatforDateNow.format(DNow)).get();
+                //Document doc = Jsoup.connect("https://home.mephi.ru/study_groups/2888/day?date=2017-12-15").get();
 
                 //list-group-item
                 //Document doc = Jsoup.connect("https://home.mephi.ru/study_groups/2888/day?date=2017-12-13").get();
